@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Todokha</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Иконки с unicons -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Инпут ввода -->
+      <div class="task-input">
+        <input type="text" placeholder="Добавить новую задачу" />
+      </div>
+
+      <div class="controls">
+        <div class="filters">
+          <!-- Фильтры задач -->
+          <span class="active" id="all">Все</span>
+          <span id="pending">Ожидающие</span>
+          <span id="completed">Выполненные</span>
+        </div>
+
+        <!-- Кнопка очистки -->
+        <button class="clear-btn">Очистить</button>
+      </div>
+
+      <!-- Здесь будут появляться задачи через JS -->
+      <ul class="task-box"></ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
